@@ -292,7 +292,7 @@ public class Chord {
         int successor = node.getSuccessor();
         if(successor<=n)
         {
-            if((n<id && id<=Math.pow(2,m)-1)||(id<= 0 && id<=successor))
+            if((n<id && id<=Math.pow(2,m)-1)||(id>= 0 && id<=successor))
             {
                 return successor;
             }
